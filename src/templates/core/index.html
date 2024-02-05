@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<h1 class="text-center">Welcome, {{ current_user.first_name }}!</h1>
+
+<h2>Your File's content:</h2>
+
+<!-- Displaying file content -->
+<div class="text-center">
+    <pre>{{ file_content }}</pre>
+</div>
+
+<h3> Your word count is {{ current_user.word_count }}</h3>
+{% endblock %}
